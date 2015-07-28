@@ -10,6 +10,7 @@ Meu post sobre o início dos estudos
 
 ```bash
 brew install go
+```
 
 ###Fedora
 
@@ -17,3 +18,4 @@ como root ou usando sudo:
 
 ```bash
 dnf install golang
+```
