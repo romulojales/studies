@@ -19,3 +19,5 @@ como root ou usando sudo:
 ```bash
 dnf install golang
 ```
+
+Repositório de suporte ao meu [blog](http://romulojales.com).
