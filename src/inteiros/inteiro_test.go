@@ -48,3 +48,104 @@ func TestSubtrai(t *testing.T){
 	}
 }
 
+func TestMultiplicaSomandoSimples(t *testing.T){
+	resultado := multiplicaSomando(4, 5)
+	if resultado != 20 {
+	 t.Errorf("4 * 5 não é 20 é %d", resultado)
+	}
+}
+
+func TestMultiplicaSomandoPor0(t *testing.T){
+	resultado := multiplicaSomando(4, 0)
+	if resultado != 0 {
+	 t.Errorf("4 * 0 não é 0 é %d", resultado)
+	}
+}
+
+func TestMultiplicaSomandoPorMenos1(t *testing.T){
+	resultado := multiplicaSomando(4, -1)
+	if resultado != -4 {
+	 t.Errorf("4 * -1 não é -4 é %d", resultado)
+	}
+}
+
+func TestMultiplicaSomandoPor1(t *testing.T){
+	resultado := multiplicaSomando(4, 1)
+	if resultado != 4 {
+	 t.Errorf("4 * 1 não é 4 é %d", resultado)
+	}
+}
+
+func TestMultiplicaSomandoPorMenos3(t *testing.T){
+	resultado := multiplicaSomando(4, -3)
+	if resultado != -12 {
+	 t.Errorf("4 * -3 não é -12 é %d", resultado)
+	}
+}
+
+func TestMultiplicaSomandoMenosComMenos(t *testing.T){
+	resultado := multiplicaSomando(-4, -3)
+	if resultado != 12 {
+	 t.Errorf("-4 * -3 não é 12 é %d", resultado)
+	}
+}
+
+
+func TestMultiplicaSomandoMenosComMenosUm(t *testing.T){
+	resultado := multiplicaSomando(-4, -1)
+	if resultado != 4 {
+	 t.Errorf("-4 * -1 não é 4 é %d", resultado)
+	}
+}
+
+
+
+func TestMultiplicaSimples(t *testing.T){
+	resultado := multiplica(4, 5)
+	if resultado != 20 {
+	 t.Errorf("4 * 5 não é 20 é %d", resultado)
+	}
+}
+
+func TestMultiplicaPor0(t *testing.T){
+	resultado := multiplica(4, 0)
+	if resultado != 0 {
+	 t.Errorf("4 * 0 não é 0 é %d", resultado)
+	}
+}
+
+func TestMultiplicaPorMenos1(t *testing.T){
+	resultado := multiplica(4, -1)
+	if resultado != -4 {
+	 t.Errorf("4 * -1 não é -4 é %d", resultado)
+	}
+}
+
+func TestMultiplicaPor1(t *testing.T){
+	resultado := multiplica(4, 1)
+	if resultado != 4 {
+	 t.Errorf("4 * 1 não é 4 é %d", resultado)
+	}
+}
+
+func TestMultiplicaPorMenos3(t *testing.T){
+	resultado := multiplica(4, -3)
+	if resultado != -12 {
+	 t.Errorf("4 * -3 não é -12 é %d", resultado)
+	}
+}
+
+func TestMultiplicaMenosComMenos(t *testing.T){
+	resultado := multiplica(-4, -3)
+	if resultado != 12 {
+	 t.Errorf("-4 * -3 não é 12 é %d", resultado)
+	}
+}
+
+func TestMultiplicaMenosComMenosUm(t *testing.T){
+	resultado := multiplica(-4, -1)
+	if resultado != 4 {
+	 t.Errorf("-4 * -1 não é 4 é %d", resultado)
+	}
+}
+

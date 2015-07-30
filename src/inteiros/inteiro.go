@@ -24,3 +24,22 @@ func subtrai(x, y int) int {
  return x - y
 }
 
+	func multiplicaSomando(x, y int) int{
+		resultado := 0
+		if y > 0{
+		 for i := 0; i<y; i++{
+			resultado = soma(resultado, x)
+		 }
+		}else if y < 0{
+			for i := y; i<0; i++ {
+				resultado = subtrai(resultado, x)
+			}
+		}
+
+		return resultado;
+	}
+
+func multiplica(x, y int) int{
+
+	return x * y;
+}
