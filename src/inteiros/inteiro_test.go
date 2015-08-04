@@ -1,7 +1,10 @@
 //Acesse meu [post](http://romulojales.com/golang-e-testes/) sobre os arquivos e testes desta pasta
 package main
 
-import "testing"
+import ("testing"
+	"encoding/json"
+"fmt")
+
 
 func TestSomaUmMaisDois(t *testing.T){
 	x := soma(1, 2)
@@ -149,4 +152,3 @@ func TestMultiplicaMenosComMenosUm(t *testing.T){
 	 t.Errorf("-4 * -1 não é 4 é %d", resultado)
 	}
 }
-
