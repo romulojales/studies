@@ -1,10 +1,10 @@
-package string_test
+package string
 import "testing"
 
 
-func TestMultiplicaPorMenos1(t *testing.T) {
-	x := "1"
-	if x != "-1" {
-		t.Errorf("4 * -1 não é -4 é %d", resultado)
+func TestStringComoArgumento(t *testing.T) {
+	x := retonaString("abc1")
+	if x != "abc1" {
+		t.Errorf("Não retornou abc1")
 	}
 }
