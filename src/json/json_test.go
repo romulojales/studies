@@ -1,10 +1,10 @@
 package main
-import (
-	"testing"
-	"encoding/json"
-	"bytes"
-)
 
+import (
+	"bytes"
+	"encoding/json"
+	"testing"
+)
 
 func TestMarshalSimpleJson(t *testing.T) {
 	arr := SimpleJson{Sort: []string{"issued", "fake"}, Fields: []string{"123", "321"}}
@@ -20,8 +20,7 @@ func TestMarshalSimpleJson(t *testing.T) {
 
 func TestMarshalComplexJson(t *testing.T) {
 	ctrl := []byte(`{"complex":[{"sort":["issued","fake"],"fields":["123","321"],"const":"abc"}]}`)
-	arr := ComplexJson{Complex:[]SimpleJson{SimpleJson{Sort: []string{"issued", "fake"}, Fields:
-	[]string{"123", "321"}, Const: "abc"}}}
+	arr := ComplexJson{Complex: []SimpleJson{SimpleJson{Sort: []string{"issued", "fake"}, Fields: []string{"123", "321"}, Const: "abc"}}}
 	jsonb, _ := json.Marshal(arr)
 
 	if !bytes.Equal(jsonb, ctrl) {
