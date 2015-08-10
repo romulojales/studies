@@ -27,7 +27,6 @@ func TestMarshalComplexJson(t *testing.T) {
 		t.Error("Jsonb errado", string(jsonb))
 		t.Error("ctrl errado", string(ctrl))
 	}
-
 }
 
 func TestUnMarshalComplexJson(t *testing.T) {
@@ -38,7 +37,6 @@ func TestUnMarshalComplexJson(t *testing.T) {
 	if arr.Complex[0].Fields[0] != "123" {
 		t.Error("Jsonb errado", string(arr.Complex[0].Fields[0]))
 	}
-
 }
 
 func TestUnMarshalComplexJsonComElementoVazio(t *testing.T) {
@@ -49,5 +47,4 @@ func TestUnMarshalComplexJsonComElementoVazio(t *testing.T) {
 	if arr.Complex[0].Fields[0] != "123" {
 		t.Error("Jsonb errado", string(arr.Complex[0].Fields[0]))
 	}
-
 }
