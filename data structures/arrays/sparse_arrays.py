@@ -1,3 +1,5 @@
+#https://www.hackerrank.com/challenges/sparse-arrays
+
 number_of_strings = int(input().strip())
 strings = []
 for _ in range(number_of_strings):
