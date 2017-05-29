@@ -1,4 +1,5 @@
-#Estudos da linguagem Go
+# Estudos da linguagem G
+o
 
 Meu post sobre o início dos estudos
 
